@@ -17,7 +17,9 @@
 }
 
 .formContainer {
-  background-color: #a7bcff;
+  background-image: url("https://images.pexels.com/photos/1933239/pexels-photo-1933239.jpeg?cs=srgb&dl=pexels-stein-egil-liland-1933239.jpg&fm=jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -26,6 +28,7 @@
   .formWrapper {
     background-color: white;
     padding: 20px 60px;
+    box-shadow: 5px 10px #888888;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -33,14 +36,14 @@
     align-items: center;
 
     .logo {
-      color: #5d5b8d;
+      color: #344E41;
       font-weight: bold;
       font-size: 24px;
 
     }
 
     .title {
-      color: #5d5b8d;
+      color: #344E41;
       font-size: 12px;
     }
 
@@ -53,7 +56,7 @@
         padding: 15px;
         border: none;
         width: 250px;
-        border-bottom: 1px solid #a7bcff;
+        border-bottom: 1px solid #A3B18A;
 
         &::placeholder {
           color: rgb(175, 175, 175);
@@ -61,7 +64,7 @@
       }
 
       button {
-        background-color: #7b96ec;
+        background-color: #344E41;
         color: white;
         padding: 10px;
         font-weight: bold;
@@ -72,8 +75,9 @@
       label {
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 10px;
-        color: #8da4f1;
+        color: #A3B18A;
         font-size: 14px;
         cursor: pointer;
 
@@ -84,7 +88,7 @@
     }
 
     p {
-      color: #5d5b8d;
+      color: black;
       font-size: 12px;
       margin-top: 10px;
     }
@@ -92,7 +96,10 @@
 }
 
 .home {
-  background-color: #a7bcff;
+  // background-color: #a7bcff;
+  background-image: url('https://images.pexels.com/photos/1933239/pexels-photo-1933239.jpeg?cs=srgb&dl=pexels-stein-egil-liland-1933239.jpg&fm=jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -100,6 +107,7 @@
 
   .container {
     border: 1px solid white;
+    box-shadow: 5px 10px #888888;
     border-radius: 10px;
     width: 80%;
     height: 85%;
@@ -112,13 +120,13 @@
 
     .sidebar {
       flex: 1;
-      background-color: #3e3c61;
+      background-color: #728359;
       position: relative;
 
       .navbar {
         display: flex;
         align-items: center;
-        background-color: #2f2d52;
+        background-color: #849669;
         height: 50px;
         padding: 10px;
         justify-content: space-between;
@@ -135,18 +143,20 @@
         .user {
           display: flex;
           gap: 10px;
+          align-items: center;
 
           img {
             background-color: #ddddf7;
-            height: 34px;
-            width: 34px;
+            height: 36px;
+            width: 36px;
             border-radius: 50%;
             object-fit: cover;
           }
 
           button {
-            background-color: #5d5b8d;
+            background-color: #344E41;
             color: #ddddf7;
+            height: 28px;
             font-size: 10px;
             border: none;
             cursor: pointer;
@@ -187,7 +197,7 @@
         cursor: pointer;
 
         &:hover {
-          background-color: #2f2d52;
+          background-color: #849669;
         }
 
         img {
@@ -216,7 +226,7 @@
 
       .chatInfo {
         height: 50px;
-        background-color: #5d5b8d;
+        background-color: #728359;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -235,10 +245,11 @@
       }
 
       .messages {
-        background-color: #ddddf7;
+        background-color: #DAD7CD;
         padding: 10px;
         height: calc(100% - 160px);
         overflow: scroll;
+        overflow: hidden;
 
         .message {
           display: flex;
@@ -295,7 +306,8 @@
 
       .input {
         height: 50px;
-        background-color: white;
+        background-color: #DAD7CD;
+        border-top: 2px solid #728359;
         padding: 10px;
         display: flex;
         align-items: center;
@@ -303,13 +315,14 @@
 
         input {
           width: 100%;
+          background-color: #DAD7CD;
           border: none;
           outline: none;
           color: #2f2d52;
           font-size: 18px;
 
           &::placeholder {
-            color: lightgray;
+            color: black;
           }
         }
 
@@ -328,7 +341,7 @@
             border: none;
             padding: 10px 15px;
             color: white;
-            background-color: #8da4f1;
+            background-color: #344E41;
             cursor: pointer;
           }
         }

@@ -1,5 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faImagePortrait } from '@fortawesome/free-solid-svg-icons';
 import React, { useState } from 'react';
-// import Add from '../img/addAvatar.png';
 import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { auth, db, storage } from '../firebase';
 import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
@@ -70,7 +71,7 @@ const Register = () => {
           <input required type="password" placeholder="Hasło" />
           <input required style={{ display: 'none' }} type="file" id="file" />
           <label htmlFor="file">
-            {/* <img src={Add} alt="" /> */}
+            {<FontAwesomeIcon icon={faImagePortrait} />}
             <span>Dodaj zdjęcie profilowe</span>
           </label>
           <button disabled={loading}>Zarejestruj się</button>
